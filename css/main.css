@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	background-image: url('../img/fondo.png');
+	background-image: url('../img/fondo2.png');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -50,7 +50,7 @@ body {
 
 .titulo-conmemoracion {
 	color: #d81e05;
-	font-size: 3.8rem;
+	font-size: 4rem;
 	font-weight: bolder;
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0 auto;
@@ -91,8 +91,8 @@ body {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	padding: 0px 0px 10px;
-	width: 76%;
+	padding: 0px 0px 10px 30px;
+	width: 72%;
 	margin: 0 auto;
 	margin-top: 50px;
 	/* -webkit-box-shadow: 0px 7px 5px 0px rgba(89, 56, 20, 1);
@@ -156,7 +156,7 @@ body {
 }
 .dni {
 	margin-right: 10px;
-	width: 20%;
+	width: 30%;
 }
 .num-doc {
 	width: 80%;
@@ -270,6 +270,7 @@ body {
 	}
 	.container-contador {
 		padding-left: 30px;
+		width: 70%;
 	}
 
 	.header {
@@ -351,6 +352,7 @@ body {
 	}
 	.container-contador {
 		width: 85%;
+		padding-top: 10px;
 	}
 	.contador {
 		font-size: 3rem;
