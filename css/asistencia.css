@@ -258,6 +258,7 @@ body {
 	.text-center {
 		display: flex;
 		justify-content: center;
+		width: 80%;
 	}
 	.text-main {
 		margin: 5%;
@@ -287,10 +288,7 @@ body {
 	}
 	.main__container {
 		margin: 0 auto;
-	}
-	.form {
-		margin-bottom: 20px;
-	}
+	
 }
 @media only screen and (max-width: 1024px) {
 }
@@ -357,6 +355,13 @@ body {
 @media only screen and (max-width: 420px) {
 	.main {
 		padding-top: 0;
+		height: 83%;
+	}
+	.main__container {
+		height: 100%;
+	}
+	.container-section {
+		margin: auto;
 	}
 	/* .text-center {
 		padding-bottom: 240px;
@@ -423,11 +428,11 @@ body {
 	}
 }
 /*height*/
-@media screen and (max-height: 930px) {
+@media screen and (max-height: 712px) {
 	body {
 		height: 100%;
 	}
-	.footer {
-		position: relative;
+	.text-main {
+		padding-bottom: 300px;
 	}
 }
