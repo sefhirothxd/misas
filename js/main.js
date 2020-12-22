@@ -1,10 +1,16 @@
+    
     let end = new Date('12/21/2020 6:10 PM');
-
     let _second = 1000;
     let _minute = _second * 60;
     let _hour = _minute * 60;
     let _day = _hour * 24;
     let timer;
+    let btnForm = document.getElementById("btn-formulario");
+
+    btnForm.addEventListener("click",function (e) {
+        e.preventDefault();
+        location.href = "trasmision.html";
+    });
 
     function showRemaining() {
         let now = new Date();
