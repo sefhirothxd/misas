@@ -76,7 +76,14 @@ body {
 .text-center {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 100%;
+}
+
+.container-chat {
+	width: 100%;
+	background-color: white;
+	height: 600px;
 }
 
 .text-main {
@@ -89,10 +96,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	margin-right: 40px;
 }
 
 iframe {
-	width: 800px;
+	width: 600px;
 	height: 600px;
 }
 
@@ -262,6 +270,15 @@ iframe {
 /*Break point*/
 @media only screen and (max-width: 1200px) {
 	body {
+		height: 100%;
+	}
+
+	.container-chat {
+		display: flex;
+		justify-content: center;
+	}
+	.container-chat {
+		width: 70%;
 	}
 
 	.container-section {
@@ -274,6 +291,7 @@ iframe {
 	.text-center {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 	}
 	.text-main {
 		margin: 5%;
@@ -320,6 +338,10 @@ iframe {
 	}
 	.main__container {
 		/* padding-bottom: 100px; */
+	}
+	.container-chat {
+		width: 80%;
+		height: 400px;
 	}
 	.text-main {
 		width: 80%;
@@ -436,6 +458,10 @@ iframe {
 	iframe {
 		width: 100%;
 		height: 400px;
+	}
+	.container-chat {
+		width: 90%;
+		height: 300px;
 	}
 }
 /*height*/
