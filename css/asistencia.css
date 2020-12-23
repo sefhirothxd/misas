@@ -271,9 +271,9 @@ body {
 	.container-section {
 		margin: auto;
 	}
-	/* .text-center {
-		padding-bottom: 240px;
-	} */
+	.text-center {
+		padding-top: 40%;
+	}
 	.text-main {
 		font-size: 1.5rem;
 		width: 100%;
