@@ -49,7 +49,8 @@ body {
 	padding-top: 20px;
 }
 
-.titulo-conmemoracion {
+.titulo-conmemoracion,
+.titulo-oculto {
 	color: #d81e05;
 	font-size: 4rem;
 	font-weight: bolder;
@@ -57,6 +58,9 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 30px;
+}
+.titulo-oculto {
+	display: none;
 }
 .main__container {
 	width: 100%;
@@ -68,23 +72,34 @@ body {
 	margin: 0 auto;
 	width: 1200px;
 	display: flex;
+	justify-content: center;
 }
 .text-center {
+	padding-top: 8%;
+	padding-bottom: 10%;
 }
 
 .text-main {
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	font-family: 'Titillium Web', sans-serif;
-	margin-top: 15%;
-	line-height: 1.2;
+	line-height: 1.3;
 	letter-spacing: 0.5px;
-	width: 80%;
+	width: 73%;
 	padding-bottom: 20px;
+	margin: 0 auto;
 }
+.text-main__trasmision {
+	text-align: center;
+	margin-bottom: 10px;
+	width: 80%;
+	margin: 0 auto;
+}
+
 .text-recuerda {
 	text-align: center;
 	width: 95%;
-	margin-top: 20px;
+	margin-top: 25px;
+	margin: 0 auto;
 }
 .container-contador {
 	background-color: white;
@@ -93,8 +108,8 @@ body {
 	text-align: center;
 	display: flex;
 	justify-content: center;
-	padding: 0px 0px 10px 30px;
-	width: 65%;
+	padding: 0px 0px 10px 0px;
+	width: 60%;
 	margin: 0 auto;
 	margin-top: 40px;
 	/* -webkit-box-shadow: 0px 7px 5px 0px rgba(89, 56, 20, 1);
@@ -115,7 +130,7 @@ body {
 	margin-right: 20px;
 }
 .contador-segundo {
-	margin-right: 30px;
+	margin: 0;
 }
 
 .contador-numero {
@@ -125,8 +140,11 @@ body {
 .description {
 	text-align: center;
 	font-size: 1.2rem;
-	padding-right: 15px;
+	padding-right: 10px;
 	font-weight: bold;
+}
+.c-segundos {
+	padding-right: 0;
 }
 .description-s {
 	font-size: 1.2rem;
@@ -160,9 +178,7 @@ body {
 }
 .dni {
 	margin-right: 10px;
-	width: 35%;
-	background-color: white;
-	color: #575756;
+	width: 30%;
 }
 .num-doc {
 	width: 80%;
@@ -252,8 +268,15 @@ body {
 /*Break point*/
 @media only screen and (max-width: 1200px) {
 	body {
-		height: 100%;
+		/* height: 100%; */
 	}
+	/* .footer {
+		background-color: #575756;
+		margin-top: 30px;
+		position: relative;
+		padding: 15px 0;
+		width: 100%;
+	} */
 
 	.container-section {
 		align-items: center;
@@ -276,11 +299,8 @@ body {
 	.contador-segundo {
 		font-size: 5rem;
 	}
-	.contador-segundo {
-		margin-right: 15px;
-	}
 	.container-contador {
-		padding-left: 30px;
+		/* padding-left: 30px; */
 		width: 70%;
 	}
 
@@ -293,18 +313,15 @@ body {
 	.container-section {
 		width: auto;
 	}
-	.footer {
-		background-color: #575756;
-		margin-top: 30px;
-		position: relative;
-		padding: 15px 0;
-		width: 100%;
-	}
+
 	.container-footer__reserva {
 		padding-left: 20px;
 	}
 	.main__container {
 		margin: 0 auto;
+	}
+	.text-main__trasmision {
+		width: 100%;
 	}
 	.form {
 		margin-bottom: 20px;
@@ -313,16 +330,32 @@ body {
 @media only screen and (max-width: 1024px) {
 }
 @media only screen and (max-width: 680px) {
+	.main {
+		padding: 0;
+	}
+	.header__linea-abajo {
+		margin-bottom: 0;
+		margin-top: 20px;
+	}
 	.text-main {
 		width: 100%;
 		line-height: 1.5;
 		font-size: 2rem;
 	}
+
 	.titulo-visualizar {
 		font-size: 3rem;
 	}
+	.titulo-conmemoracion {
+		display: none;
+	}
+	.titulo-oculto {
+		display: block;
+		font-size: 2.9rem;
+	}
 	.container-contador {
-		padding-left: 30px;
+		/* padding-left: 30px; */
+		width: 75%;
 	}
 	.contador,
 	.contador-segundo {
@@ -351,20 +384,32 @@ body {
 }
 @media only screen and (max-width: 420px) {
 	.text-main {
-		font-size: 1.5rem;
+		font-size: 1.7rem;
+		line-height: 1.1;
 	}
-	.titulo-conmemoracion {
+	/* .titulo-conmemoracion {
+		font-size: 2rem;
+	} */
+	.titulo-oculto {
 		font-size: 2rem;
 	}
 	.title-form {
 		font-size: 2rem;
 	}
+	.text-main__trasmision {
+		width: 95%;
+	}
 	.container-condiciones p {
 		font-size: 1rem;
 	}
+	.text-center {
+		padding-top: 20%;
+		padding-bottom: 55%;
+	}
 	.container-contador {
-		width: 85%;
+		width: 100%;
 		padding-top: 10px;
+		padding-left: 10px;
 	}
 	.contador,
 	.contador-segundo {
@@ -404,12 +449,11 @@ body {
 }
 
 /*height*/
-@media screen and (max-height: 930px) {
+@media screen and (max-height: 712px) {
 	body {
 		height: 100%;
 	}
-	.footer {
-		position: relative;
-		margin-top: 60px;
+	.text-main {
+		padding-bottom: 200px;
 	}
 }

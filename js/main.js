@@ -1,17 +1,11 @@
     
-    let end = new Date('12/28/2020 1:29 PM');
+    let end = new Date('12/31/2020 1:29 PM');
     let _second = 1000;
     let _minute = _second * 60;
     let _hour = _minute * 60;
     let _day = _hour * 24;
     let timer;
-    let btnForm = document.getElementById("btn-formulario");
-
-    // btnForm.addEventListener("click",function (e) {
-    //     e.preventDefault();
-    //     location.href = "trasmision.html";
-    // });
-
+    
     function showRemaining() {
         let now = new Date();
         let distance = end - now;
@@ -20,10 +14,10 @@
             // contenedor.classList.toggle("container-contador");
             clearInterval(timer);
             document.getElementById('reset-contador').innerHTML = `<h2 class="titulo-visualizar">Ahora podrás visualizar<br> la trasmisión</h2>`;
-            setTimeout(() => {
+            // setTimeout(() => {
                 
-                location.href = "trasmision.html";
-            }, 3000);
+            //     location.href = "trasmision.html";
+            // }, 3000);
             return;
         }
         let days = Math.floor(distance / _day);

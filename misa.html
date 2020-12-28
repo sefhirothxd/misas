@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/misa.css">
 </head>
 <body>
     <!-- <div class="container"> -->
@@ -27,8 +27,10 @@
                 <section class="container-section">
                     <div class="text-center">
                         <article class="text-main">
-                            <p>A través de la transmisión en vivo de una misa conmemoramos a quienes partieron. 
-                               <br> Para acceder, completa los datos del formulario.</p>
+                            <h1 class="titulo-oculto">Misa de Conmemoración por <br> Nuestros seres Queridos</h1>
+                            <p class="text-main__trasmision">A través de la transmisión en vivo de una misa conmemoramos a quienes partieron. 
+                               <br> Para acceder, debes esperar el formulario que va
+                                aparecer 10 minutos antes de la misa.</p>
                             <p class="text-recuerda">Recuerda que la transmisión empezará en</p>
                             <div class="reset-contador" id="reset-contador">
                                 <div class="container-contador" id="contador">
@@ -44,7 +46,7 @@
                                         <p class="contador-numero" id="c-minutos">00:</p>
                                         <p class="description">Minutos</p>
                                     </div>
-                                    <div class="contador c-final">
+                                    <div class="contador-segundo">
                                         <p class="contador-numero" id="c-segundos">00</p>
                                         <p class="description-s">Segundos</p>
                                     </div>
@@ -52,15 +54,11 @@
                             </div>
                         </article>
                     </div>
-                    <section class="container-form">
+                    <!-- <section class="container-form">
                         <form class="form" action="">
                             <h2 class="title-form">Ingresa tus datos para ver la misa</h2>
                             <div class="from__container-input">
-                                <!-- <input class="form-input dni" placeholder="DNI   |V" type="text"> -->
-                                <select class="form-input dni" placeholder="DNI   |V" type="text" name="" id="">
-                                    <option value="">DNI   |V</option>
-                                    <option value="">RUC   |V</option>
-                                </select>
+                                <input class="form-input dni" placeholder="DNI   |V" type="text">
                                 <input class="form-input num-doc" placeholder="Número de Doc" type="text">
                             </div>
                             <input class="form-input" placeholder="Nombre" type="text">
@@ -75,7 +73,7 @@
                             </div>
                             <button class="btn-vermisa" id="btn-formulario">VER MISA</button>
                         </form>
-                    </section>
+                    </section> -->
                 </section>
             </div>
         </main>
@@ -88,5 +86,5 @@
     <!-- </div> -->
 </body>
 <script src="js/main.js"></script>
-<script src="js/btnVer.js"></script>
+
 </html>
