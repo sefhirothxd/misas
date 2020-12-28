@@ -1,5 +1,5 @@
     
-    let end = new Date('12/23/2020 6:10 PM');
+    let end = new Date('12/28/2020 1:29 PM');
     let _second = 1000;
     let _minute = _second * 60;
     let _hour = _minute * 60;
@@ -7,10 +7,10 @@
     let timer;
     let btnForm = document.getElementById("btn-formulario");
 
-    btnForm.addEventListener("click",function (e) {
-        e.preventDefault();
-        location.href = "trasmision.html";
-    });
+    // btnForm.addEventListener("click",function (e) {
+    //     e.preventDefault();
+    //     location.href = "trasmision.html";
+    // });
 
     function showRemaining() {
         let now = new Date();
@@ -20,6 +20,10 @@
             // contenedor.classList.toggle("container-contador");
             clearInterval(timer);
             document.getElementById('reset-contador').innerHTML = `<h2 class="titulo-visualizar">Ahora podrás visualizar<br> la trasmisión</h2>`;
+            setTimeout(() => {
+                
+                location.href = "trasmision.html";
+            }, 3000);
             return;
         }
         let days = Math.floor(distance / _day);
@@ -62,9 +66,9 @@
         document.getElementById('contador').innerHTML += `<div class="contador">
         <p class="contador-numero" id="c-dias">`+minutos+`:</p>
         <p class="description">Minutos</p></div>`;
-        document.getElementById('contador').innerHTML += `<div class="contador">
+        document.getElementById('contador').innerHTML += `<div class="contador-segundo">
         <p class="contador-numero" id="c-dias">`+segundos+`</p>
-        <p class="description">Segundos</p></div>`;
+        <p class="description c-segundos">Segundos</p></div>`;
     }
 
     timer = setInterval(showRemaining, 1000);
