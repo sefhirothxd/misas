@@ -372,8 +372,8 @@ body {
 	}
 }
 /*height*/
-@media screen and (max-height: 800px) {
+/* @media screen and (max-height: 500px) {
 	.text-center {
 		padding-top: 50%;
 	}
-}
+} */
